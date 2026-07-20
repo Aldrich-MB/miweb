@@ -4,7 +4,7 @@ Este repositorio contiene archivos de prueba para practicar comandos básicos de
 
 ## Estructura del Proyecto
 
-miweb/
+  miweb/
 - ├── .gitignore # Archivos ignorados por Git
 - ├── Archivo1.txt # Primer archivo de prueba
 - ├── Archivo2.txt # Segundo archivo de prueba
