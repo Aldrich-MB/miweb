@@ -5,10 +5,10 @@ Este repositorio contiene archivos de prueba para practicar comandos básicos de
 ## Estructura del Proyecto
 
 miweb/
-├── .gitignore # Archivos ignorados por Git
-├── Archivo1.txt # Primer archivo de prueba
-├── Archivo2.txt # Segundo archivo de prueba
-└── README.md # Este archivo
+- ├── .gitignore # Archivos ignorados por Git
+- ├── Archivo1.txt # Primer archivo de prueba
+- ├── Archivo2.txt # Segundo archivo de prueba
+- └── README.md # Este archivo
 
 # Comandos practicados
 
