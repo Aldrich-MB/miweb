@@ -1,4 +1,4 @@
-# Mi Primer Repositorio Git
+# Mi Primer Repositorio en GitHub
 
 Este repositorio contiene archivos de prueba para practicar comandos básicos de Git.
 
