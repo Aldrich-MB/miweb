@@ -1,4 +1,5 @@
 print("Hola Mundo")
-a = 117
-b = 223
-print (a+b)
+
+#for
+for numero in range(1, 6):
+    print(f"Esta es la repetición número: {numero}")
