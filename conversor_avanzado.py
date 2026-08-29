@@ -4,10 +4,10 @@
 from conversor import texto_a_binario, binario_a_texto, texto_a_hexadecimal, hexadecimal_a_texto
 
 def texto_a_base64(texto):
-    """
-    Convierte texto a Base64 (codificación estándar)
-    Ejemplo: "Hola" -> "SG9sYQ=="
-    """
+    
+    #Convierte texto a Base64 (codificación estándar)
+    
+    
     import base64
     texto_bytes = texto.encode('utf-8')
     base64_bytes = base64.b64encode(texto_bytes)
@@ -15,10 +15,9 @@ def texto_a_base64(texto):
 
 
 def base64_a_texto(base64_str):
-    """
-    Convierte Base64 a texto
-    Ejemplo: "SG9sYQ==" -> "Hola"
-    """
+
+    #Convierte Base64 a texto
+    
     import base64
     base64_bytes = base64_str.encode('utf-8')
     texto_bytes = base64.b64decode(base64_bytes)
@@ -26,27 +25,27 @@ def base64_a_texto(base64_str):
 
 
 def texto_a_binario_con_espacios(texto, separador=' '):
-    """
-    Convierte texto a binario con separador personalizado
-    """
+    
+   #Convierte texto a binario con separador personalizado
+    
     binario = texto_a_binario(texto)
     return binario.replace(' ', separador)
 
 
 def binario_con_espacios_a_texto(binario_str, separador=' '):
-    """
-    Convierte binario con separador personalizado a texto
-    """
+    
+    #Convierte binario con separador personalizado a texto
+    
     # Reemplazar separador por espacio
     binario_normalizado = binario_str.replace(separador, ' ')
     return binario_a_texto(binario_normalizado)
 
 
 def texto_a_octal(texto):
-    """
-    Convierte texto a octal
-    Ejemplo: "Hola" -> "110 157 154 141"
-    """
+    
+    #Convierte texto a octal
+
+    
     if not texto:
         return ""
     
@@ -62,10 +61,9 @@ def texto_a_octal(texto):
 
 
 def octal_a_texto(octal_str):
-    """
-    Convierte octal a texto
-    Ejemplo: "110 157 154 141" -> "Hola"
-    """
+    
+    #Convierte octal a texto
+    
     if not octal_str:
         return ""
     
@@ -85,9 +83,9 @@ def octal_a_texto(octal_str):
 
 
 def detectar_formato_avanzado(entrada):
-    """
-    Detecta el formato de una cadena (incluye octal y base64)
-    """
+    
+    #Detecta el formato de una cadena (incluye octal y base64)
+    
     entrada_limpia = entrada.strip()
     
     if not entrada_limpia:
