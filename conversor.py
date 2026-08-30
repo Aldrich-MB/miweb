@@ -2,11 +2,9 @@
 # Módulo con funciones de conversión entre texto y sistemas numéricos
 
 def texto_a_binario(texto):
-    """
-    Convierte un texto a binario (ASCII de 8 bits)
-    Ejemplo: "Hola" -> "01001000 01101111 01101100 01100001"
-    Soporta caracteres especiales (UTF-8)
-    """
+    
+    #Convierte un texto a binario (ASCII de 8 bits)
+    
     if not texto:
         return ""
     
@@ -24,11 +22,9 @@ def texto_a_binario(texto):
 
 
 def binario_a_texto(binario_str):
-    """
-    Convierte una cadena binaria (separada por espacios) a texto
-    Ejemplo: "01001000 01101111 01101100 01100001" -> "Hola"
-    Soporta binarios de 7 u 8 bits
-    """
+    
+    #Convierte una cadena binaria (separada por espacios) a texto    
+
     if not binario_str:
         return ""
     
@@ -63,11 +59,9 @@ def binario_a_texto(binario_str):
 
 
 def texto_a_hexadecimal(texto):
-    """
-    Convierte texto a hexadecimal
-    Ejemplo: "Hola" -> "486F6C61"
-    Soporta caracteres especiales (UTF-8)
-    """
+    
+    #Convierte texto a hexadecimal
+    
     if not texto:
         return ""
     
@@ -83,11 +77,9 @@ def texto_a_hexadecimal(texto):
 
 
 def hexadecimal_a_texto(hex_str):
-    """
-    Convierte hexadecimal a texto
-    Ejemplo: "486F6C61" -> "Hola"
-    Soporta espacios y prefijos 0x
-    """
+    
+    #Convierte hexadecimal a texto
+    
     if not hex_str:
         return ""
     
@@ -119,10 +111,9 @@ def hexadecimal_a_texto(hex_str):
 
 # Función de utilidad para detectar automáticamente si es binario o texto
 def detectar_formato(entrada):
-    """
-    Detecta si una cadena es binario (0s y 1s separados por espacios)
-    o texto normal
-    """
+    
+    #Detecta si una cadena es binario (0s y 1s separados por espacios o texto normal
+    
     entrada_limpia = entrada.strip()
     
     if not entrada_limpia:
