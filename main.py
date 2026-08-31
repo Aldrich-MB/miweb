@@ -18,7 +18,7 @@ def mostrar_menu():
 
 
 def main():
-    """Función principal del programa"""
+    #Función principal del programa
     while True:
         mostrar_menu()
         opcion = input("\nElige una opción (1-6): ").strip()
