@@ -1,4 +1,3 @@
-# main.py
 # Programa principal que usa las funciones del módulo conversor
 
 import conversor

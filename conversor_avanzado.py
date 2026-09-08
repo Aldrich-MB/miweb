@@ -1,4 +1,3 @@
-# conversor_avanzado.py
 # Módulo con funciones de conversión avanzadas
 
 from conversor import texto_a_binario, binario_a_texto, texto_a_hexadecimal, hexadecimal_a_texto

@@ -1,4 +1,3 @@
-# conversor.py
 # Módulo con funciones de conversión entre texto y sistemas numéricos
 
 def texto_a_binario(texto):
