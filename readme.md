@@ -17,7 +17,3 @@ Este repositorio contiene archivos de prueba para practicar comandos básicos de
 # Autor
 
 Aldrich MB - [GitHub](https://github.com/Aldrich-MB)
-
-# Estado
-
-Repositorio creado y sincronizado con GitHub
