@@ -6,12 +6,10 @@ def texto_a_base64(texto):
     
     #Convierte texto a Base64 (codificación estándar)
     
-    
     import base64
     texto_bytes = texto.encode('utf-8')
     base64_bytes = base64.b64encode(texto_bytes)
     return base64_bytes.decode('utf-8')
-
 
 def base64_a_texto(base64_str):
 
@@ -22,14 +20,12 @@ def base64_a_texto(base64_str):
     texto_bytes = base64.b64decode(base64_bytes)
     return texto_bytes.decode('utf-8')
 
-
 def texto_a_binario_con_espacios(texto, separador=' '):
     
    #Convierte texto a binario con separador personalizado
     
     binario = texto_a_binario(texto)
     return binario.replace(' ', separador)
-
 
 def binario_con_espacios_a_texto(binario_str, separador=' '):
     
@@ -39,11 +35,9 @@ def binario_con_espacios_a_texto(binario_str, separador=' '):
     binario_normalizado = binario_str.replace(separador, ' ')
     return binario_a_texto(binario_normalizado)
 
-
 def texto_a_octal(texto):
     
     #Convierte texto a octal
-
     
     if not texto:
         return ""
@@ -57,7 +51,6 @@ def texto_a_octal(texto):
         resultado.append(octal.zfill(3))  # Asegurar 3 dígitos
     
     return ' '.join(resultado)
-
 
 def octal_a_texto(octal_str):
     
@@ -79,7 +72,6 @@ def octal_a_texto(octal_str):
             raise ValueError(f"Octal inválido: {octal}")
     
     return ''.join(resultado)
-
 
 def detectar_formato_avanzado(entrada):
     
