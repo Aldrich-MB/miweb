@@ -1,4 +1,3 @@
-"""Eto es un archivo de prueba"""
 from platform import platform
 
 
