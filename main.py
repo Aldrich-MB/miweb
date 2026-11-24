@@ -16,14 +16,12 @@ def mostrar_menu():
     print("="*50)
 
 
-def main():
-    #Función principal del programa
+def main(): #Función principal del programa
     while True:
         mostrar_menu()
         opcion = input("\nElige una opción (1-6): ").strip()
         
-        if opcion == '1':
-            # Texto a Binario
+        if opcion == '1': # Texto a Binario
             texto = input("Ingresa el texto: ")
             try:
                 resultado = conversor.texto_a_binario(texto)
@@ -32,8 +30,7 @@ def main():
             except Exception as e:
                 print(f" Error: {e}")
         
-        elif opcion == '2':
-            # Binario a Texto
+        elif opcion == '2':  # Binario a Texto
             binario = input("Ingresa el binario (separado por espacios): ")
             try:
                 resultado = conversor.binario_a_texto(binario)
@@ -41,8 +38,7 @@ def main():
             except Exception as e:
                 print(f"Error: {e}")
         
-        elif opcion == '3':
-            # Texto a Hexadecimal
+        elif opcion == '3':   # Texto a Hexadecimal
             texto = input("Ingresa el texto: ")
             try:
                 resultado = conversor.texto_a_hexadecimal(texto)
@@ -51,8 +47,7 @@ def main():
             except Exception as e:
                 print(f"Error: {e}")
         
-        elif opcion == '4':
-            # Hexadecimal a Texto
+        elif opcion == '4': # Hexadecimal a Texto
             hex_str = input("Ingresa el hexadecimal (ej: 486F6C61): ")
             try:
                 resultado = conversor.hexadecimal_a_texto(hex_str)
@@ -60,8 +55,7 @@ def main():
             except Exception as e:
                 print(f"Error: {e}")
         
-        elif opcion == '5':
-            # Detección automática
+        elif opcion == '5':   # Detección automática
             entrada = input("Ingresa el texto o código: ")
             try:
                 formato = conversor.detectar_formato(entrada)
